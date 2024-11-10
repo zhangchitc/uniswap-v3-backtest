@@ -1,11 +1,7 @@
 import fetch from 'node-fetch'
 
 const urlForProtocol = (protocol) => {
-  return protocol === 1 ? "https://api.thegraph.com/subgraphs/name/ianlapham/optimism-post-regenesis" : 
-    protocol === 2 ? "https://api.thegraph.com/subgraphs/name/ianlapham/arbitrum-minimal" :
-    protocol === 3 ? "https://api.thegraph.com/subgraphs/name/ianlapham/uniswap-v3-polygon" :
-    protocol === 4 ? "https://api.thegraph.com/subgraphs/name/perpetual-protocol/perpetual-v2-optimism" :
-    "https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v3";
+  return "https://gateway.thegraph.com/api/536af9ae001b0f1c18a14cf5b14145fc/subgraphs/id/5zvR82QoaXYFyDEKLZ9t6v9adgnptxYpKpSbxtgVENFV";
 }
 
 const requestBody = (request) => {
